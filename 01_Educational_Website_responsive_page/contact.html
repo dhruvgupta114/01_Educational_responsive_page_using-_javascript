@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Educational Website using HTML,CSS,Swiperjs and JS</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body{
+          background-image: url("./images/bg-texture.png");
+        }
+      </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html"><h4>EDU</h4></a>
+        <ul class="nav_menu">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="courses.html">COURSES</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <button id="open-menu-btn">
+          <i class="fa-solid fa-bars" style="color: #b197fc"></i>
+        </button>
+        <button id="close-menu-btn">
+          <i class="fa-solid fa-xmark" style="color: #b197fc"></i>
+        </button>
+      </div>
+    </nav>
+
+    <section class="contact">
+        <div class="contact-container container">
+            <aside class="contact-aside">
+                <div class="aside-image">
+                    <img src="./images//contact.svg" alt="">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptatem perferendis natus.</p>
+                <ul class="contact-details">
+                    <li>
+                        <i class="fa-solid fa-phone" style="color: #ffffff;"></i>
+                        <h5>+91 123 456 7890</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope" style="color: #ffffff;"></i>
+                        <h5>support@gmail.com</h5>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>
+                        <h5>India</h5>
+                    </li>
+                </ul>
+                <ul class="contact-socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </aside>
+
+            <form class="contact-form" >
+                <div class="form-name">
+                    <input type="text" name="First name" placeholder="First Name" required>
+                    <input type="text" name="Last name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="Email Address" placeholder="Your Email Address" required>
+                <textarea name="Message"  rows="7" placeholder="Message"></textarea>
+                <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-1">
+                <a href="index.html" class="footer-logo"><h4>EDU</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, maiores!</p>
+            </div>
+            <div class="footer-2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Condition</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-4">
+                <h4>Contact us</h4>
+                <div>
+                    <p>+91 123 456 7890</p>
+                    <p>abc@gmail.com</p>
+                </div>
+                <ul class="footer-socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook" style="color: #fff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter" style="color: #fff;"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <small>Copyright &copy; EDU Youtube Tutorials</small>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
